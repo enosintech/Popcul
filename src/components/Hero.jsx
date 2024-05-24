@@ -28,9 +28,9 @@ const Hero = () => {
   return (
     <section className="w-full h-[calc(100vh-150px)] flex">
         <div className="w-[45%] h-full flex flex-col justify-end text-6xl tracking-tight pb-10 relative">
-            <p className="font-[900]">POPCUL<span className="font-[200]">™</span><span className="font-[200]"> —</span><span className="font-[200]"> Power of Passion</span></p>
-            <p className="font-[200]">Creates Unstoppable Legends</p>
-            <div className='w-full h-fit mt-20 flex justify-between text-[14px] font-[100] tracking-tight text-justify'>
+            <p className="font-[900]"><span className='stretch'>POPCUL</span><span className="font-[200]">™</span><span className="font-[200]"> —</span><span className="font-[200]"> Power of</span></p>
+            <p className="font-[200]">Passion Creates Unstoppable Legends</p>
+            <div className='w-full h-fit mt-12 flex justify-between text-[14px] font-[100] tracking-tight text-justify'>
                 <div className='w-[45%] h-full'>
                     <p>
                         Steeped in intentionality, the office employs a dialectical approach to design, navigating the space between communities and individuals, form and function, virtual and physical.
@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
         </div>
         <div className="w-[55%] h-full flex items-center justify-center gap-y-6 relative">
-            <div className="w-[700px] h-[700px] rounded-full shadow bg-white overflow-hidden relative cursor-pointer flex items-center justify-center">
+            <div className="w-[700px] h-[700px] rounded-full bg-white overflow-hidden relative cursor-pointer flex items-center justify-center shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[5] motiv" src={heroImg1} alt="Product 1" />
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[4] motiv" src={heroImg2} alt="Product 2"/>
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[3] motiv" src={heroImg1} alt="Product 3"/>
