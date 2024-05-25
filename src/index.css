@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes pulse {
+  0% {
+    width: 6px;
+    height: 6px;
+  }
+  100% {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +23,6 @@ body {
   color: black;
   width: 100vw;
   overflow-x: hidden;
-  overflow-y: hidden;
   user-select: none;
   background-color: white;
   padding: 0 10px;
@@ -20,4 +30,35 @@ body {
 
 .stretch {
   font-stretch: ultra-expanded;
+}
+
+.slide-in, .slide-out, .slide-left, .slide-right {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 9999;
+}
+
+.slide-in {
+  transform-origin: bottom;
+}
+
+.slide-out {
+  transform-origin: bottom;
+}
+
+.slide-left {
+  transform-origin: left;
+}
+
+.slide-right {
+  transform-origin: left;
+}
+
+.pulse {
+  animation: pulse infinite alternate 0.8s;
+  transform-origin: center;
 }

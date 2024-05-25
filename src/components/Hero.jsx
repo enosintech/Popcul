@@ -1,7 +1,8 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
-import { boldArrowIcon, heroImg1, heroImg2, heroImg3, heroImg4, heroImg5 } from "../lib/index";
+import { heroImg1, heroImg2, heroImg3, heroImg4, heroImg5 } from "../lib/index";
 
 const Hero = () => {
 
@@ -28,29 +29,29 @@ const Hero = () => {
   return (
     <section className="w-full h-[calc(100vh-150px)] flex">
         <div className="w-[45%] h-full flex flex-col justify-end text-6xl tracking-tight pb-10 relative">
-            <p className="font-[900]"><span className='stretch'>POPCUL</span><span className="font-[200]">™</span><span className="font-[200]"> —</span><span className="font-[200]"> Power of</span></p>
+            <p className="font-[900]"><span className='stretch'>POPCUL</span><span className="font-[200]">™</span><span className="font-[200]"> —</span><span className="font-[200]"> Power Of</span></p>
             <p className="font-[200]">Passion Creates Unstoppable Legends</p>
-            <div className='w-full h-fit mt-12 flex justify-between text-[14px] font-[100] tracking-tight text-justify'>
-                <div className='w-[45%] h-full'>
+            <div className='w-full h-fit mt-12 flex justify-start gap-x-10 text-[15px] font-[50] tracking-tight text-justify'>
+                <div className='w-[41%] h-full'>
                     <p>
                         Steeped in intentionality, the office employs a dialectical approach to design, navigating the space between communities and individuals, form and function, virtual and physical.
                     </p>
                 </div>
-                <div className='w-[47%] h-full px-3'>
+                <div className='w-[41%] h-full'>
                     <p>
                         Steeped in intentionality, the office employs a dialectical approach to design, navigating the space between communities and individuals, form and function, virtual and physical.
                     </p>
                 </div>
             </div>
-            <div className="w-fit flex items-center gap-x-2 mt-20 cursor-pointer hover:opacity-75 active:opacity-40 transition-all">
+            <Link to='/products' className="w-fit flex items-center gap-x-3 mt-20 cursor-pointer hover:opacity-75 active:opacity-40 transition-all">
                 <p className="text-3xl font-[400]">SHOP ALL PRODUCTS</p>
-                <img src={boldArrowIcon} className="size-7 -rotate-45"/>
-            </div>
+                <span className='w-2 h-2 bg-black rounded-full pulse' />
+            </Link>
         </div>
         <div className="w-[55%] h-full flex items-center justify-center gap-y-6 relative">
-            <div className="w-[700px] h-[700px] rounded-full bg-white overflow-hidden relative cursor-pointer flex items-center justify-center shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
+            <div className="w-[650px] h-[650px] rounded-full bg-white overflow-hidden relative cursor-pointer flex items-center justify-center shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[5] motiv" src={heroImg1} alt="Product 1" />
-                <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[4] motiv" src={heroImg2} alt="Product 2"/>
+                <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[4] motiv" src={heroImg4} alt="Product 2"/>
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[3] motiv" src={heroImg1} alt="Product 3"/>
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[2] motiv" src={heroImg4} alt="Product 4"/>
                 <img className="w-[70%] [70%] object-contain flex items-center justify-center bg-white absolute z-[1] motiv" src={heroImg5} alt="Product 5"/>
