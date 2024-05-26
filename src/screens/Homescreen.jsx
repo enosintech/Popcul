@@ -2,7 +2,7 @@ import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
-import { upTransition } from "../utils/transition";
+import { homeTransition } from "../utils/transition";
 
 const Homescreen = () => {
   return (
@@ -14,4 +14,4 @@ const Homescreen = () => {
   )
 }
 
-export default upTransition(Homescreen);
+export default homeTransition(Homescreen);

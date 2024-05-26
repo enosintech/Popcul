@@ -28,8 +28,12 @@ body {
   padding: 0 10px;
 }
 
+.leave-home {
+  transform-origin: top;
+}
+
 .overlay {
-  clip-path: circle(0% at 76%);
+  clip-path: circle(0% at 80% 55%);
 }
 
 .pulse {
@@ -41,7 +45,7 @@ body {
   font-stretch: ultra-expanded;
 }
 
-.slide-in, .slide-out, .slide-left, .slide-right {
+.slide-in, .slide-out, .slide-left, .slide-right, .show-home, .leave-home {
   position: fixed;
   left: 0;
   top: 0;
@@ -51,12 +55,16 @@ body {
   z-index: 9999;
 }
 
+.show-home {
+  transform-origin: top;
+}
+
 .slide-in {
-  transform-origin: bottom;
+  transform-origin: top;
 }
 
 .slide-out {
-  transform-origin: bottom;
+  transform-origin: top;
 }
 
 .slide-left {
