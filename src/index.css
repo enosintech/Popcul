@@ -28,6 +28,15 @@ body {
   padding: 0 10px;
 }
 
+.overlay {
+  clip-path: circle(0% at 76%);
+}
+
+.pulse {
+  animation: pulse infinite alternate 0.8s;
+  transform-origin: center;
+}
+
 .stretch {
   font-stretch: ultra-expanded;
 }
@@ -56,9 +65,4 @@ body {
 
 .slide-right {
   transform-origin: left;
-}
-
-.pulse {
-  animation: pulse infinite alternate 0.8s;
-  transform-origin: center;
 }
