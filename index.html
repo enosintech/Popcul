@@ -7,7 +7,15 @@
     <title >Popcul | A Fashion Label </title>
   </head>
   <body>
+    <div class="loader w-[100vw] h-[100vh] bg-black fixed z-[9999] top-0 left-0 pointer-events-none"></div>
     <div id="root"></div>
+    <script>
+      const loader = document.querySelector(".loader");
+
+      window.addEventListener("load", () => {
+        loader.style.opacity = 0;
+      })
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
